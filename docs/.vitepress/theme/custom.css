@@ -1,0 +1,37 @@
+:root {
+  --vp-home-hero-image-background-image: linear-gradient(
+    180deg,
+    #bae7ff 55%,
+    #d6e4ff 55%,
+    #efdbff 65%,
+    #f0f5ff 65%
+  );
+  --vp-home-hero-image-filter: blur(90px);
+
+  --vp-home-hero-name-background: -webkit-linear-gradient(60deg, #ccc 30%, #ccc, #ccc);
+  --vp-home-hero-name-background: linear-gradient(60deg, #597ef7 30%, #722ed1, #1890ff);
+  --vp-home-hero-name-color: transparent;
+
+  --vp-c-brand: #ff8484;
+  --vp-c-brand-light: #ff8484;
+  --vp-c-brand-lighter: #ff8484;
+  --vp-c-brand-lightest: #ff8484;
+  --vp-c-brand-dark: #ff8484;
+  --vp-c-brand-darker: #ff6c6c;
+  --vp-c-brand-darkest: #ff5252;
+  --vp-c-brand-dimm-1: rgba(65, 135, 63, 0.05);
+  --vp-c-brand-dimm-2: rgba(65, 135, 63, 0.2);
+  --vp-c-brand-dimm-3: rgba(65, 135, 63, 0.5);
+}
+
+.vp-doc a:hover {
+  text-decoration-color: #16a34a;
+}
+
+.depazer-img {
+  margin: 1rem auto;
+  border-radius: 4px;
+  border: solid var(--vp-c-brand-light) 1px;
+  box-shadow: 0 0 5px #ccc;
+  overflow: hidden;
+}

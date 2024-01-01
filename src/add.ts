@@ -11,6 +11,6 @@
  * add(6, 4)
  * // => 10
  */
-const add = (augend: number, addend: number): number => augend + addend
-
-export default add
+export default function add(augend: number, addend: number): number {
+  return augend + addend
+}
