@@ -1,6 +1,6 @@
 {
   "name": "@ileostar/utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Opinionated collection of common JavaScript / TypeScript utils by @ileostar",
   "packageManager": "pnpm@8.13.1",
@@ -35,6 +35,9 @@
       "git add ."
     ]
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@ileostar/eslint-config": "^0.3.0",
     "@types/node": "^20.10.6",
