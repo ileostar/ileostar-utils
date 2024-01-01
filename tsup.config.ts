@@ -12,11 +12,10 @@ const commonConfig: Options = {
 };
 
 export default defineConfig({
-    format: ['esm', 'cjs', 'iife'],
+    format: ['esm', 'cjs'],
     entry: ['src/index.ts'],
     outDir: 'dist',
     splitting: false,
-    sourcemap: true,
     clean: true,
     treeshake: true,
     dts: true,
