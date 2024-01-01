@@ -1,12 +1,13 @@
 {
   "name": "@ileostar/utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "description": "Opinionated collection of common JavaScript / TypeScript utils by @ileostar",
   "packageManager": "pnpm@8.13.1",
   "author": "LeoStar <https://github.com/ileostar>",
   "scripts": {
     "build": "tsup",
+    "dev": "tsup --watch",
     "prepare": "husky install",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
@@ -35,6 +36,15 @@
       "git add ."
     ]
   },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -44,6 +54,7 @@
   },
   "devDependencies": {
     "@ileostar/eslint-config": "^0.3.0",
+    "@ileostar/utils": "^1.0.3",
     "@types/node": "^20.10.6",
     "@typescript-eslint/eslint-plugin": "^6.16.0",
     "@typescript-eslint/parser": "^6.16.0",
