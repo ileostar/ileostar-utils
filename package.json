@@ -48,6 +48,6 @@
     "vitest": "^1.1.0"
   },
   "dependencies": {
-    "@types/node": "^20.8.4"
+    "@types/node": "^20.10.6"
   }
 }
