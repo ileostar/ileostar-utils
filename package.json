@@ -1,6 +1,6 @@
 {
   "name": "@ileostar/utils",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "description": "Opinionated collection of common JavaScript / TypeScript utils by @ileostar",
   "packageManager": "pnpm@8.13.1",
