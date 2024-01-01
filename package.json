@@ -1,8 +1,8 @@
 {
   "name": "ileostar-utils",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Opinionated collection of common JavaScript / TypeScript utils by @ileostar",
+  "packageManager": "pnpm@8.12.0",
+  "author": "LeoStar <https://github.com/ileostar>",
   "scripts": {
     "test": "jest",
     "prepare": "husky install",
@@ -10,10 +10,14 @@
     "lint": "eslint .",
     "commit": "git add . && git-cz",
     "push": "git push",
-    "fix": "eslint src/**/*.*  --fix"
+    "fix": "eslint src/**/*.*  --fix",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
   },
-  "keywords": [],
-  "author": "ileostar",
+  "keywords": [
+    "utils"
+  ],
   "license": "MIT",
   "config": {
     "commitizen": {
@@ -25,13 +29,12 @@
   },
   "lint-staged": {
     "src/**/*.{js,vue}": [
-    "eslint --fix",
-    "git add ."
+      "eslint --fix",
+      "git add ."
     ]
   },
   "devDependencies": {
     "@ileostar/eslint-config": "^0.3.0",
-    "@types/jest": "^29.5.5",
     "@typescript-eslint/eslint-plugin": "^6.7.5",
     "@typescript-eslint/parser": "^6.7.5",
     "chalk": "^5.3.0",
@@ -40,7 +43,9 @@
     "eslint": "^8.51.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vitepress": "1.0.0-rc.34",
+    "vitest": "^1.1.0"
   },
   "dependencies": {
     "@types/node": "^20.8.4"
